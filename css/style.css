@@ -1,0 +1,118 @@
+@font-face{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Slab', serif;
+}
+
+body{
+    font-family: Roboto Slab, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #c4c4c4;
+    margin: 0;
+}
+.header-content {
+    background-image: url('../img/background-pic.gif');
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    
+    min-width: 100%;
+    min-height: 100vh;;
+  }
+  
+  .header-content::after{
+    content:"";
+    background-color: #000000;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+
+.menu-box {
+    display: flex;
+    padding: 45px;
+    min-width: 75%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 800;
+    color: #FFFFFF
+}
+
+.menu-items{
+    margin: 0;
+    padding: 0;
+    
+  }
+  .menu-list-item a{
+      font-family: 'Montserrat';
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: capitalize;
+    text-decoration: none;
+    
+  }
+  
+  .menu-list-item {
+    list-style-type: none;
+    display: inline-block;
+    
+  }
+  
+  .menu-list-item:nth-child(n+2){
+    margin-left: 35px;
+  }
+
+  .title-box {
+      display: flex;
+      flex-direction: column;
+      align-items: space-around;
+      min-width: 40%;
+      margin-top: 15%;
+  }
+
+  .title {
+    color: #FFFFFF;
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main {
+      font-family: 'Montserrat';
+      font-size: 48px;
+      text-transform: uppercase;
+  }
+
+  .sub {
+    font-size: 20px;
+    text-transform: capitalize;
+    padding-top: 30px;;
+}
+
+.title-button {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: none;
+    border: solid 2px #FFFFFF;
+    padding: 20px 35px;
+    max-width: 180px;
+    align-self: center;
+    margin-top: 50px;
+}
