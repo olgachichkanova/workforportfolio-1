@@ -389,54 +389,143 @@ body{
 }
 
 .blog-posts__content {
-    display: flex;;
+    display: flex;
+    margin-top: 75px;
 }
 .blog-post__picture {
-    
+    width: 44%;
 }
 
 .blog-post__img {
-    max-width: 100%;
+    width: 100%;
 }
 .blog-posts__item {
     margin-left: 3%;
     width: 53%;
 }
 .blog-posts_header-box {
+    display: flex;
+    align-items: center;
 }
 
 .date-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.date {
-    
+    align-items: center;
     width: 75px;
     height: 75px;
     padding: 20px 22px 20px 25px;
+    border: 2px solid #555555;
+}
+
+.date {
     font-family: 'Montserrat';
     font-weight: bold;
     font-size: 1.5rem;
-    text-transform: uppercase;
-    border: 2px solid;
     color:#777777;
     text-align: center;
 }
+
 .date-decoration {
+    display: block;
     font-size: 0.9rem;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 
 
 .blog-posts__title-box {
+   margin-left: 30px;
 }
 .blog-posts__title {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    color:#777777;
+
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
 }
+
+
+
 .blog-posts__author {
+    color:#777777;
+    font-size: 0.8rem;
 }
+
+.link__decoration{
+    color:#777777;
+    text-decoration: none;
+    
+}
+
 .blog-posts_text {
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 40px;
 }
 .blog-posts_link {
+    font-size: 0.8rem;
+    color:#777777;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.blog-posts_link {
+    font-size: 0.8rem;
+    color:#777777;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.hover-decoration:hover {
+    color:#c0301c;
+    text-decoration: none;
+}
+
+.customers {
+    flex-direction: column;
+    align-items: center;
+}
+.customers__list {
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 85px;
+}
+
+.customers__items {
+    margin: 0;
+    padding: 0;
+}
+.customers__items:nth-child(n+2) {
+    padding-left: 5%;
+}
+.customers__link {
+}
+.customers__logo {
+}
+.customers__review-card {
+    width: 63%;
+}
+.customers__review-text {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
+}
+.customers__review-author {
+    text-align: center;
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 0;
 }
