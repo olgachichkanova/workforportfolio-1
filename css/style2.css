@@ -509,10 +509,7 @@ body{
 .customers__items:nth-child(n+2) {
     padding-left: 5%;
 }
-.customers__link {
-}
-.customers__logo {
-}
+
 .customers__review-card {
     width: 63%;
 }
@@ -528,4 +525,48 @@ body{
     font-size: 1.25rem;
     margin: 0;
     padding: 0;
+}
+
+.address-title {
+    font-size: 0.9rem;
+    font-family: "Montserrat";
+    color: rgb(85, 85, 85);
+    text-transform: uppercase;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.address-title:nth-child(n+2) {
+    margin-top: 35px;
+}
+
+.address::before {
+   content: url(../img/map-icon.svg); 
+   position: absolute;
+   left: -20px;
+}
+
+.phone::before {
+    content: url(../img/phone-icon.svg); 
+    position: absolute;
+    left: -20px;
+ }
+
+ .email::before {
+    content: url(../img/email-icon.svg); 
+    position: absolute;
+    left: -20px;
+ }
+
+.address-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.75rem; 
+    padding-top: 20px;
+}
+
+.address-link {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
 }
