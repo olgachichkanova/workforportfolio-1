@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style2.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -12,8 +13,10 @@
     <header class="header">
         <div class="content">
             <div class="menu-box container">
-                <p class="logo">Startup</p>
-                <nav class="menu">
+                <div class="logo-box">
+                    <a href="#" class="logo">Startup</a>
+                </div>
+                <nav class="menu js-menu">
                     <ul class="menu__list">
                         <li class="menu__item"><a href="#" class="menu__link">Home</a></li>
                         <li class="menu__item"><a href="#" class="menu__link">Services</a></li>
@@ -90,7 +93,7 @@
                 <ul class="about-us__cards">
                     <li class="about-us__item">
                         <div class="img-box">
-                            <img src="img/aboutus-1.png" alt="Md. Khalil Uddin's Picture" class="about-us__picture">
+                            <img src="img/aboutus1.gif" alt="Md. Khalil Uddin's Picture" class="about-us__picture">
                             <div class="block-active">
                                 <div class="profile__contacts">
                                     <div class="profile-box">
@@ -113,7 +116,7 @@
                     </li>
                     <li class="about-us__item">
                         <div class="img-box">
-                            <img src="img/aboutus-2.png" alt="Rubel Miah's Picture" class="about-us__picture">
+                            <img src="img/aboutus2.gif" alt="Rubel Miah's Picture" class="about-us__picture">
                             <div class="block-active">
                                 <div class="profile__contacts">
                                     <div class="profile-box">
@@ -136,7 +139,7 @@
                     </li>
                     <li class="about-us__item">
                         <div class="img-box">
-                            <img src="img/aboutus-3.png" alt="Shamim Mia's Picture" class="about-us__picture">
+                            <img src="img/aboutus3.gif" alt="Shamim Mia's Picture" class="about-us__picture">
                             <div class="block-active">
                                 <div class="profile__contacts">
                                     <div class="profile-box">
@@ -159,7 +162,7 @@
                     </li>
                     <li class="about-us__item">
                         <div class="img-box">
-                            <img src="img/aboutus-4.png" alt="John Doe's Picture" class="about-us__picture">
+                            <img src="img/aboutus4.gif" alt="John Doe's Picture" class="about-us__picture">
                             <div class="block-active">
                                 <div class="profile__contacts">
                                     <div class="profile-box">
@@ -201,32 +204,32 @@
             </div>
             <!---add title and button when hover -->
             <div class="latest-works__content">
-                <div class="latest-works__img-box"><img src="img/latestwork-1.gif" alt="" class="latest-works__picture"></div>
+                <div class="latest-works__img-box latest-works__img-box_1"><span class="visually-hidden">1</span></div>
            
 
-            <div class="latest-works__img-box"><img src="img/latestwork-2.gif" alt="" class="latest-works__picture"></div>
-            
+                <div class="latest-works__img-box latest-works__img-box_2"><span class="visually-hidden">2</span></div>
+                
 
-            <div class="latest-works__img-box"><img src="img/latestwork-3.gif" alt="" class="latest-works__picture"></div>
-            
+                <div class="latest-works__img-box latest-works__img-box_3"><span class="visually-hidden">3</span></div>
+                
 
-            <div class="latest-works__img-box"><img src="img/latestwork-4.gif" alt="" class="latest-works__picture"></div>
-            
+                <div class="latest-works__img-box latest-works__img-box_4"><span class="visually-hidden">4</span></div>
+                
 
-            <div class="latest-works__img-box"><img src="img/latestwork-5.gif" alt="" class="latest-works__picture"></div>
-            
+                <div class="latest-works__img-box latest-works__img-box_5"><span class="visually-hidden">5</span></div>
+                
 
-            <div class="latest-works__img-box"><img src="img/latestwork-6.gif" alt="" class="latest-works__picture"></div>
-            
+                <div class="latest-works__img-box latest-works__img-box_6"><span class="visually-hidden">6</span></div>
+                
 
-            <div class="latest-works__img-box"><img src="img/latestwork-7.gif" alt="" class="latest-works__picture"></div>
-            
+                <div class="latest-works__img-box latest-works__img-box_7"><span class="visually-hidden">7</span></div>
+                
 
-            <div class="latest-works__img-box"><img src="img/latestwork-8.gif" alt="" class="latest-works__picture"></div>
-            
+                <div class="latest-works__img-box latest-works__img-box_8"><span class="visually-hidden">8</span></div>
+                
 
-            <div class="latest-works__img-box"><img src="img/latestwork-9.gif" alt="" class="latest-works__picture"></div>
-            </div>
+                <div class="latest-works__img-box latest-works__img-box_9"><span class="visually-hidden">9</span></div>
+                </div>
         </section>
 
         <article class="call-for-action">
@@ -301,34 +304,44 @@
                     <li class="customers__items"><a href="#" class="customers__link"><img src="img/contacts-5.gif" alt="" class="customers__logo"></a></li>
                 </ul>
     
-                <div class="customers__review-card">
-                    <p class="customers__review-text">
-                        Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum”
-                    </p>
+                <ul class="customers__review__list">
+                    <li class="customers__review-card customers__review-card_active">
+                        <p class="customers__review-text">
+                            Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum”
+                        </p>
+        
+                        <p class="customers__review-author">
+                            John Haffin, Google Inc.
+                        </p>
+                    </li>
     
-                    <p class="customers__review-author">
-                        John Haffin, Google Inc.
-                    </p>
-                </div>
+                    <li class="customers__review-card">
+                        <p class="customers__review-text">
+                            Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum”
+                        </p>
+        
+                        <p class="customers__review-author">
+                            Sebastian Kalpek, Kalpek Inc.
+                        </p>
+                    </li>
+    
+                    <li class="customers__review-card">
+                        <p class="customers__review-text">
+                            Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum”
+                        </p>
+        
+                        <p class="customers__review-author">
+                            Alex Wu, Microsoft
+                        </p>
+                    </li>
+                </ul>
 
-                <div class="customers__review-card">
-                    <p class="customers__review-text">
-                        Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum”
-                    </p>
-    
-                    <p class="customers__review-author">
-                        Sebastian Kalpek, Kalpek Inc.
-                    </p>
-                </div>
-
-                <div class="customers__review-card">
-                    <p class="customers__review-text">
-                        Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum”
-                    </p>
-    
-                    <p class="customers__review-author">
-                        Alex Wu, Microsoft
-                    </p>
+                <div class="slider-buttons">
+                    <button class="slider-button slider-button_active"><span class="visually-hidden">button1</span></button>
+                    <button class="slider-button"><span class="visually-hidden">button2</span></button>
+                    <button class="slider-button"><span class="visually-hidden"></span>
+                        
+                    </button>
                 </div>
             </div>
         </article>
