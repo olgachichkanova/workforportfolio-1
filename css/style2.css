@@ -757,7 +757,6 @@ body{
 
 .disclaimer {
     font-size: 0.75rem;
-    padding-left: 40px;
 }
 
 .disclaimer_decoration {
@@ -781,8 +780,6 @@ body{
     border: solid 1px #555555;
     font-size: 0.75rem;
     margin: 0;
-    
-    margin-left: 50px;
 
     align-self: center;
 }
@@ -983,6 +980,13 @@ body{
         width: 280px;
     }
 
+    .button-submit {
+        margin-left: 50px;
+    }
+
+    .disclaimer {
+        padding-left: 40px;
+    }
 }
  
   @media(max-width: 768px) {
@@ -1143,4 +1147,7 @@ body{
         width: 80%;
     }
 
+    .form-actions {
+        flex-direction: column;
+    }
   }
