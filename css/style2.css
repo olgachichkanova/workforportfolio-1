@@ -92,6 +92,18 @@ body{
     text-decoration: none;
 }
 
+.burger {
+    display: none;
+  }
+  
+  .line {
+    width: 25px;
+    height: 2px;
+    background-color: rgb(226, 226, 226);
+    margin-top: 5px;
+    transition: all 0.3s ease;
+  }
+
 .title-box {
     flex-direction: column;
     padding-top: 21%;
@@ -701,10 +713,12 @@ body{
 .slider-button {
     width: 15px;
     height: 15px;
+    margin: 5px;
     
     border-radius: 50%;
     background-color: #dddddd;
     border: 1px solid #dddddd;
+    cursor: pointer;
 }
 
 .slider-button:focus {
@@ -994,12 +1008,63 @@ body{
         justify-content: space-between;
     }
 
-      .menu__list {
-          flex-direction: column;
+    .menu__list {
+        display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      transform: translatex(100%);
+      transition: transform 0.5s ease-in;
+      
+      position: absolute;
+      right: 0px;
+      height: 100vh;
+      top: 0;
+      background-color: #c0301c;
+    }
+
+    .menu__link {
+        font-size: 1rem;
+        opacity: 0;
+    }
+
+    .menu__list_active {
+        transform: translatex(0);
       }
+     
+    }
+    
+    @keyframes navLinkFade {
+      from{
+        opacity: 0;
+        transform: translatex(50px);
+      }
+      
+      to{
+        opacity: 1;
+        transform: translatex(0);
+      }
+    }
+    
+    .toggle .line_1 {
+      transform: rotate(-45deg) translate(-5px, 5px);
+    }
+    
+    .toggle .line_2 {
+      opacity: 0;
+    }
+    
+    .toggle .line_3 {
+       transform: rotate(45deg) translate(-5px, -5px);
+    }
 
       .menu__item:nth-child(n+2) {
           margin-left: 0;
+      }
+
+      .burger {
+        display: block;
+        cursor: pointer;
       }
 
       .main {
