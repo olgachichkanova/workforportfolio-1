@@ -904,17 +904,17 @@ body{
   @media(min-width: 769px) {
 
     .menu-box {
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
     }
     
-    .logo-box{
-        width: 45%;
-    }
-    
     .menu {
-        width: 49%;
+        width: 70%;
     }
+
+    .burger {
+        display: none;
+      }
 
     .main {
         font-size: 3rem;
@@ -1004,8 +1004,12 @@ body{
 }
  
   @media(max-width: 768px) {
+     body {
+         overflow: hidden;
+     }
     .menu-box {
         justify-content: space-between;
+        
     }
 
     .menu__list {
@@ -1017,7 +1021,7 @@ body{
       transition: transform 0.5s ease-in;
       
       position: absolute;
-      right: 0px;
+      right: 0;
       height: 100vh;
       top: 0;
       background-color: #c0301c;
@@ -1031,8 +1035,6 @@ body{
     .menu__list_active {
         transform: translatex(0);
       }
-     
-    }
     
     @keyframes navLinkFade {
       from{
@@ -1135,6 +1137,14 @@ body{
     }
 
     .blog-posts__item {
+        width: 100%;
+    }
+
+    .customers {
+        width: 90%;
+    }
+
+    .customers__list, .customers__review-card {
         width: 100%;
     }
 
